@@ -33,7 +33,7 @@ Below we display the histogram of total steps taken per day, where we choose bre
 hist(day_steps, main='Histogram of total steps taken per day', xlab='steps', breaks=10, xlim=c(0,25000), col='red')
 ```
 
-![](PA1_template.Rmd_files/figure-html/unnamed-chunk-3-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
 
 In the following we compute the mean and median of the number of steps taken per day by the individual via the R-code
 
@@ -98,7 +98,7 @@ The last steps of the above code serve to trannsform the interval variable into 
 plot(act_steps_new$interval, act_steps_new$average_steps, type='l',ylab='average steps', xlab='time', main='average daily activity')
 ```
 
-![](PA1_template.Rmd_files/figure-html/unnamed-chunk-7-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
 
 From the plot we see that the highest average activity is between 8:00  and 10:00. Let us now determine the exact interval, where the individual shows on average the most activity.  
 
@@ -202,7 +202,7 @@ Clearly we already see a significant difference in the output of total steps per
 hist(new_day_steps, main='Histogram of total steps taken per day removed NAs', xlab='steps', breaks=10, xlim=c(0,25000), col='red')
 ```
 
-![](PA1_template.Rmd_files/figure-html/unnamed-chunk-13-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-13-1.png) 
 
 The peak at 0 of the old histogram, which was mainly due to the reason that various days had a significant amount of NA's in their dataset, is now gone. On the other hand the peak at the center is significantly larger, due to the fact that we used as replacing method an average scheme.
 
@@ -309,6 +309,6 @@ plot(act_steps_weekday$interval, act_steps_weekday$average_steps, type='l',ylab=
 plot(act_steps_weekend$interval, act_steps_weekend$average_steps, type='l',ylab='average steps', xlab='time' , ylim=c(0,250),main=' weekends')
 ```
 
-![](PA1_template.Rmd_files/figure-html/unnamed-chunk-19-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-19-1.png) 
 
 As expected the individual shows far more activity early in the morning on weekdays compared to weekends, however less activity around noon and afternoon. This most likely can be explained by the working habits during the weekdays as well as the habits of the individual at weekends.
